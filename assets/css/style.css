@@ -27,19 +27,36 @@ h1 {
     top: 100px;
     right: 25px;
     background: white;
-    opacity: 50%;
+    opacity: 75%;
 }
 
-#title h1,h2,h3 {
+#title h1,h2 {
     line-height: 1;
     word-wrap: normal;
     padding-top: 0px;
     padding-left: 3px;
     text-align: center;
+    color: #000;
 }
 
-.title h2 {
-    line-height: 1%;
+#title h3 {
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#title h3 span.source  {
+    line-height: 1;
+    word-wrap: normal;
+    padding-top: 0px;
+    padding-left: 3px;
+    text-align: center;
+    color: blue;
+}
+
+nav {
+    position: fixed;
+    z-index: 4;
 }
 
 /* Beggining of CSS code for nav menu. By Erik Terwin. */
@@ -49,12 +66,14 @@ h1 {
 */
 body
 {
+    z-index: 1;
+background-image: url("../pics/NYC_Snowfall.gif");
+background-size: cover;
  margin: 0;
  padding: 0;
  
  /* make it look decent enough */
 
- background: #232323;
  color: #cdcdcd;
  font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -62,11 +81,11 @@ body
 #menuToggle
 {
  display: block;
- position: relative;
+ position: fixed;
  top: 50px;
  left: 50px;
  
- z-index: 1;
+ z-index: 1000;
  
  -webkit-user-select: none;
  user-select: none;
@@ -98,7 +117,7 @@ body
  cursor: pointer;
  
  opacity: 0; /* hide this */
- z-index: 2; /* and place it over the hamburger */
+ z-index: 1002; /* and place it over the hamburger */
  
  -webkit-touch-callout: none;
 }
@@ -117,7 +136,7 @@ body
  background: #cdcdcd;
  border-radius: 3px;
  
- z-index: 1;
+ z-index: 1002;
  
  transform-origin: 4px 0px;
  
@@ -170,7 +189,8 @@ body
 */
 #menu
 {
- position: absolute;
+ position: fixed;
+ z-index: 1000;
  width: 300px;
  margin: -100px 0 0 -50px;
  padding: 50px;
@@ -199,4 +219,29 @@ body
 #menuToggle input:checked ~ ul
 {
  transform: none;
+}
+
+#intro {
+    display: flex;
+    box-sizing: content-box ;
+    width: 350px;
+    margin-top: 300px;
+    margin-left: 25px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    color: black;
+    background-color: plum;
+    opacity: 60%;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 2;
+}
+
+#intro p {
+    opacity: 100%;
+    font-weight: bolder;
+    z-index: 3;
 }
