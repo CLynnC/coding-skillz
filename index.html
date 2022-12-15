@@ -11,6 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
          <link rel="stylesheet" href="./assets/css/style.css">
+         <!-- I'm sorry. I just love this font. It's soo... codeey!-->
+         <link href="https://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
+         <link href="https://fonts.cdnfonts.com/css/old-english-five" rel="stylesheet">
+         <link href="https://fonts.cdnfonts.com/css/gerald-fletchery" rel="stylesheet">
+                
     </head>
 
 <header>
@@ -25,16 +30,15 @@
        
        <!-- Navigation courtesy of CodePen.io - Made by Erik Terwan -->
        <nav role="navigation">
-        <div id="menuToggle">
+        
+        <div id="menuToggle">  <input type="checkbox">
           <!-- A fake / hidden checkbox is used as click reciever,
           so you can use the :checked selector on it.  -->
-          <input type="checkbox" />
           
           <!--  Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.  -->
           <span></span>
           <span></span>
           <span></span>
-          </input>
           <!--  Too bad the menu has to be inside of the button but hey, it's pure CSS magic.  -->
           <ul id="menu">
             <a href="#"><li>Home</li></a>
@@ -54,14 +58,25 @@
 
 <body>
     <div id="intro">
-        <p> Welcome to my online Professional Coding Portfolio!
-            <br><p id="p2"> This page exists to showcase my works. Everything on the page includig the page itself, is coded and built by me. So feel free to have a look around and enjoy the cool applications!
-                <br> Below you will find several of my latest coding projects. At the bottom of each pic, I've listed the various code languages and technology used to create them. That way, you can tell how it was made. Also a separate page for all of the 'source code' for each project. Please do not steal my code without crediting me for it's creation. I worked very hard on all of this. The code is mainly for employers to see that I worked on it myself, and for others if they wonder how I did it. Not for sale or anything. Thank You,
-                <br><br> <div id="sig">Crystal Lynn m.</div>    
-            </p>
-        </p>
-    </div>   
-
+        <p><h3> Welcome to my online Professional Coding Portfolio!</h3></p>
+            <br><span class="separator">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~*~</span><p id="p2"> &nbsp;&nbsp;This page exists to showcase my works. Everything on the page includig the page itself, is coded and built by me. So feel free to have a look around and enjoy the cool applications!
+                <br>&nbsp;&nbsp; Below you will find several of my latest coding projects. At the bottom of each pic, I've listed the various code languages and technology used to create them. That way, you can tell how it was made. Also a separate page for all of the <a href="#">'source code'</a> for each project. Please do not steal my code without crediting me for it's creation. I worked very hard on all of this. The code is mainly for employers to see that I worked on it myself, and for others if they wonder how I did it. Not for sale or anything. Thank You,
+                <br><br><div id="sig">Crystal Lynn m.</div>    
+        </p>  &copy;
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="main-showcase">
+        <container class="project-1"></container>
+        <container class="project-2"><a href="https://tmortara.github.io/Space-Junkies"><img src="assets/pics/SpaceJunkiesMain.png"/></a></container>
+        <container class="project-3"></container>
+        <container class="project-4"></container>
+        <container class="Possbily More Projects to Come. . ."></container>
+    </div>
+    
 </body>
-
+<footer>
+    <p>This page brought to you by Crystal Lynn Miller &copy; Release Date December 2022 </p>
+</footer>
 </html>

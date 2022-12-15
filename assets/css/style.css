@@ -1,21 +1,30 @@
+* {
+    font-family: 'OCR A Extended', sans-serif;
+    font-size: 18px;
+}
+
+
+
+
 .main-image img {
     position:absolute;
     top: 10px;
     right: 400px;
     margin-top: 40px;
+    box-shadow: #232323, bottom, right, 3;
 }
 
 .main-image img {
     width:500px;
     height:500px;
     border-radius: 50%;
-    
+    box-shadow: 10px 10px darkblue;
 }
 
 h1 {
   color:black;  
   font-size: 48px;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Old English Five', sans-serif;                                            
 }
 
 #title {
@@ -31,7 +40,7 @@ h1 {
 }
 
 #title h1,h2 {
-    line-height: 1;
+    line-height: 1.2;
     word-wrap: normal;
     padding-top: 0px;
     padding-left: 3px;
@@ -66,14 +75,13 @@ nav {
 */
 body
 {
-    z-index: 1;
+z-index: 1;
 background-image: url("../pics/NYC_Snowfall.gif");
 background-size: cover;
  margin: 0;
  padding: 0;
  
  /* make it look decent enough */
-
  color: #cdcdcd;
  font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -110,10 +118,11 @@ background-size: cover;
  display: block;
  width: 40px;
  height: 32px;
- position: absolute;
- top: -7px;
- left: -5px;
+ position: fixed;
+ top: 40px;
+ left: 43px;
  
+ user-select: none;
  cursor: pointer;
  
  opacity: 0; /* hide this */
@@ -221,12 +230,14 @@ background-size: cover;
  transform: none;
 }
 
+/* end of copied code  */
+
 #intro {
     display: flex;
     box-sizing: content-box ;
-    width: 350px;
+    width: 400px;
     margin-top: 300px;
-    margin-left: 25px;
+    margin-left: 150px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
@@ -236,7 +247,8 @@ background-size: cover;
     background-color: plum;
     opacity: 60%;
     border-radius: 25px;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     z-index: 2;
 }
 
@@ -244,4 +256,50 @@ background-size: cover;
     opacity: 100%;
     font-weight: bolder;
     z-index: 3;
+}
+
+#intro h3 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.separator {
+   font-weight: bold;
+   font-size: x-large;
+}
+
+#sig {
+    font-family: 'Gerald Fletchery', sans-serif;
+    opacity: 100%;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+/*#main-showcase container {
+    max-height: 50px;
+    max-width: 50px;
+}*/
+.project-2 img {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 25px;
+    transform: initial;
+}
+
+.project-2 img:hover {
+    transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-duration: 2s;
+    max-height: 500px;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 10%;
+}
+
+.project-2 img :visited  {
+    transition: ease-out;
+}
+
+footer {
+    background-color: #3e3e3e;
+    opacity: 75%;
 }
