@@ -31,22 +31,24 @@ h1 {
 }
 
 #title {
+    position: fixed;
+    left: 1050px;
     text-emphasis-color: solid black ;position: fixed;
     border-color: black;
     border-radius: 150px;
     max-width: 500px;
-    box-sizing: border-box 200px;
-    top: 100px;
+    height: 300px;
+    box-sizing: border-box;
+    top: 400px;
     right: 25px;
     background-color: floralwhite;
     opacity: 75%;
 }
 
 #title h1,h2 {
-    line-height: 1.2;
+    
     word-wrap: normal;
-    padding-top: 0px;
-    padding-left: 3px;
+    
     text-align: center;
     color: #000;
 }
@@ -291,12 +293,48 @@ body
     margin-bottom: 0%;
 }
 
+.strings {
+    padding-bottom: 50px;
+}
+
 .mcc-certdegree {
     height: 350px;
     width: 500px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
     border-radius: 40%;
+}
+
+.babyBoy {
+    height: 600px;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 40%;
+}
+
+
+.textbox1 {
+    position: absolute;
+    display: inline-block;
+    width: 1000px;
+    height: 600px;
+    overflow-y:auto;
+    background-color:rgb(130 176 187);
+    color: black;
+    padding: 25px;
+    padding-top: 0px;
+    margin-top: 15px;
+    margin-bottom: 0%;
+    border-radius: 25px;
+    filter: drop-shadow(16px 16px 20px rgb(36, 251, 248));
+}
+
+.tac {
+    font-weight: bolder;
+    color: blue;
 }
 
 #main-showcase {
@@ -370,7 +408,28 @@ box.p2 strong {
 .grow:hover { 
     transform: scale(1.2); 
     }
+      
+      #title {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        right: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "lato", sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        letter-spacing: 10px;
+        margin-top: -60px;
+        padding-left: 10px;
+      }
 
+      #title span {
+        background: -webkit-linear-gradient(white, #38495a);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
 footer {
     background-color: #3e3e3e;
    padding-top: 10px;

@@ -1,0 +1,28 @@
+* {
+    font-family: 'OCR A Extended', sans-serif;
+    z-index: 1;
+    background-image: url("../pics/thePowerofCode-2.gif");
+    background-size: cover;
+}
+
+header {
+    color:aliceblue;
+    background-color: blue;
+}
+
+#text {
+    color: aliceblue;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+p {
+    background-color: black;
+    position: relative;
+}
