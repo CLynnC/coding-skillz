@@ -1932,7 +1932,6 @@
     text-align: center;
     color: #ccf2ff;
     font-size: 20px;
-    padding-top: 20px;
     font-family: fantasy;
   }
 
@@ -2033,11 +2032,12 @@
   .col form input,
   .col form textarea,
   .col form button {
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 15px 20px;
     border: 3px solid transparent;
     background: rgba(235, 157, 175, 0.5);
-    transition: .5s all ease;
+    transition: .5s all ease; 
   }
   
   .col form input:hover,
@@ -2049,7 +2049,8 @@
   .col form textarea[type=text] {
     
     padding: 12px 20px;
-    margin: 8px 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     border: 3px solid transparent;
     -webkit-transition: 0.5s;
