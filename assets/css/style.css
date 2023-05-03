@@ -12,7 +12,7 @@ body {
 .main-image img {
     position:absolute;
     top: 10px;
-    right: 400px;
+    right: 600px;
     margin-top: 40px;
     box-shadow: #232323, bottom, right, 3;
 }
@@ -32,7 +32,7 @@ h1 {
 
 #title {
     position: fixed;
-    left: 1050px;
+    left: 1200px;
     text-emphasis-color: solid black ;position: fixed;
     border-color: black;
     border-radius: 150px;
@@ -48,7 +48,7 @@ h1 {
 #title h1,h2 {
     
     word-wrap: normal;
-    
+    margin-top: 0px;
     text-align: center;
     color: #000;
 }
@@ -59,7 +59,7 @@ h1 {
     font-weight: bolder;
 }
 
-#title h3 span.source  {
+.source  {
     line-height: 1;
     word-wrap: normal;
     padding-top: 0px;
@@ -408,27 +408,6 @@ box.p2 strong {
 .grow:hover { 
     transform: scale(1.2); 
     }
-      
-      #title {
-        position: fixed;
-        top: 50%;
-        left: 0;
-        right: 0;
-        color: #FFF;
-        text-align: center;
-        font-family: "lato", sans-serif;
-        font-weight: 300;
-        font-size: 50px;
-        letter-spacing: 10px;
-        margin-top: -60px;
-        padding-left: 10px;
-      }
-
-      #title span {
-        background: -webkit-linear-gradient(white, #38495a);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
       
 footer {
     background-color: #3e3e3e;
