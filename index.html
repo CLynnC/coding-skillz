@@ -352,12 +352,87 @@
             
             <main class="row contact-form">
                 <section class="col">
-                    <form action="./sendEmail.php" method="post" enctype="text/plain">
-                        <input type="text" placeholder="Full Name" class="namee" name="fullName">
-                        <input type="text" placeholder="Your-email@email.com" class="emailer" name="email">
-                        <textarea type='text' name="message" id="message1" cols="30" rows="10" placeholder="Your message here . . ."></textarea>
-                        <button type="submit" id="sendButton">SEND</button>
-                    </form>
+                    
+                    <div class="container">
+                        <div class="row mx-0 justify-content-center">
+                          <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
+                            <form
+                              method="POST"
+                              class="w-100 rounded-1 p-4 border bg-white"
+                              action="https://public.herotofu.com/v1/0c080540-e96e-11ed-b2e2-c10354b56774"
+                            >
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block">Your name</span>
+                                <input
+                                  name="name"
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Joe Bloggs"
+                                />
+                              </label>
+                      
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block">Email address</span>
+                                <input
+                                  name="email"
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="joe.bloggs@example.com"
+                                  required
+                                />
+                              </label>
+                      
+                              <label class="d-block mb-4">
+                                <span class="form-label d-block">Message</span>
+                                <textarea
+                                  name="message"
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="What can I do for you? . . ."
+                                  required
+                                ></textarea>
+                              </label>
+                      
+                              <div class="mb-3">
+                                <button type="submit" class="btn btn-primary px-3 rounded-3">
+                                - Contact -
+                                </button>
+                              </div>
+                      
+                              <div class="d-block text-end">
+                                <div class="small">
+                                  by
+                                  <a
+                                    href="https://herotofu.com"
+                                    class="text-dark text-decoration-none"
+                                    target="_blank"
+                                    >HeroTofu</a
+                                  >
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    
+                    
+                    <!--<form action="https://public.herotofu.com/v1/0c080540-e96e-11ed-b2e2-c10354b56774" method="post" accept-charset="UTF-8">
+                        <div>
+                          <label for="name">Your Name</label>
+                          <input name="Name" id="name" type="text" required />
+                        </div>
+                        <div>
+                          <label for="email">Your Email</label>
+                          <input name="Email" id="email" type="email" required  />
+                        </div>
+                        <div>
+                          <input type="submit" value="Download CTA" />
+                          <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                          </div>
+                        </div>
+                      </form>-->
                 </section>
             </main>
 </body>
